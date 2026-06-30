@@ -11,6 +11,7 @@
         "custom/wlsunset",
         "idle_inhibitor",
         "sway/language",
+        "custom/screenshot",
         "custom/dunst",
         "custom/clipboard",
         "cpu",
@@ -40,6 +41,12 @@
         "max-length": 50,
         "tooltip": true
     },
+
+    "custom/screenshot": {
+        "format": "",
+        "on-click-release": "grmishot --notify save area",
+        "tooltip": false
+    }
 
     "custom/wf-recorder": {
          "interval": "once",
