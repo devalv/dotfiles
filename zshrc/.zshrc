@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git docker golang python)
+plugins=(git golang python)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,7 +17,6 @@ export PATH="/usr/local/go/bin:$PATH"
 alias df="duf -only local -only-fs btrfs,ntfs,fat32"
 alias la="exa -l --no-permissions --group-directories-first"
 alias cat="batcat"
-alias vim="hx"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
