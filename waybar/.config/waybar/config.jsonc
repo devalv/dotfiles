@@ -8,13 +8,9 @@
         "tray",
         "custom/playerctl",
         "custom/help",
-        "custom/wlsunset",
-        "idle_inhibitor",
         "sway/language",
         "custom/screenshot",
-        "custom/dunst",
         "custom/clipboard",
-        "cpu",
         "memory",
         "power-profiles-daemon",
         "battery",
@@ -43,10 +39,10 @@
     },
 
     "custom/screenshot": {
-        "format": "",
+        "format": "\uf030",
         "on-click-release": "grmishot --notify save area",
         "tooltip": false
-    }
+    },
 
     "custom/wf-recorder": {
          "interval": "once",
