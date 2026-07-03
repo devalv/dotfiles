@@ -40,7 +40,7 @@
 
     "custom/screenshot": {
         "format": "\uf030",
-        "on-click-release": "grmishot --notify save area",
+        "on-click-release": "grimshot --notify save area",
         "tooltip": false
     },
 
