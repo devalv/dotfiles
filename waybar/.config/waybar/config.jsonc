@@ -14,6 +14,7 @@
         "memory",
         "power-profiles-daemon",
         "battery",
+        "custom/wbcw",
         "network",
         "bluetooth",
         "pulseaudio",
@@ -230,5 +231,12 @@
     "tray": {
         "icon-size": 21,
         "spacing": 10
+    },
+
+   "custom/wbcw": {
+        "exec" : "wb-current-weather -config $HOME/.config/wb-current-weather.yml",
+        "return-type": "json",
+        "interval": 300,
+         "format": "{}"
     }
 }
