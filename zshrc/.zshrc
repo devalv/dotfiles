@@ -23,7 +23,7 @@ export PATH="/$HOME/.local/bin:$PATH"
 export PATH="/$HOME/go/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
-alias df="duf -only local -only-fs btrfs,ntfs,fat32"
+alias df="duf -only local -only-fs btrfs,ntfs,fat32,ntfs3,ext4"
 alias la="exa -l --no-permissions --group-directories-first"
 alias cat="batcat"
 
