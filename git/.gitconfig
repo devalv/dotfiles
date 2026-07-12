@@ -3,3 +3,5 @@
 [user]
 	name = Aleksei Devyatkin
 	email = devyatkin.av@ya.ru
+[pull]
+    rebase = false
