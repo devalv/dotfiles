@@ -23,6 +23,15 @@ export PATH="/$HOME/.local/bin:$PATH"
 export PATH="/$HOME/go/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
+# wayland blurry conf
+export QT_QPA_PLATFORM="wayland;xcb"
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_SCALE_FACTOR_ROUNDING_POLICY="RoundPreferFloor"
+
+# Auto-start Herdr
+if [[ -z "$HERDR_ENV" ]]; then
+    herdr
+fi
 alias df="duf -only local -only-fs btrfs,ntfs,fat32,ntfs3,ext4"
 alias la="exa -l --no-permissions --group-directories-first"
 alias cat="batcat"
