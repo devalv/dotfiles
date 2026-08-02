@@ -2,6 +2,8 @@
 
 format = """
 [](surface0)\
+$hostname\
+[<U+E0B0>](bg:green fg:surface0)\
 $os\
 $username\
 [](bg:peach fg:surface0)\
@@ -188,3 +190,9 @@ vimcmd_symbol = '[](bold fg:creen)'
 vimcmd_replace_one_symbol = '[](bold fg:purple)'
 vimcmd_replace_symbol = '[](bold fg:purple)'
 vimcmd_visual_symbol = '[](bold fg:lavender)'
+
+[hostname]
+ssh_only = false
+format = "[$hostname]($style) "
+style = "bold underline"
+disabled = false
