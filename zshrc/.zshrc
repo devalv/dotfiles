@@ -1,12 +1,6 @@
-# Path to your Oh My Zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-ZSH_THEME="robbyrussell"
-
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git golang python)
-
-source $ZSH/oh-my-zsh.sh
+HISTFILE=~/.zsh_history
+SAVEHIST=10000
+HISTSIZE=10000
 
 setopt HIST_IGNORE_ALL_DUPS      # Delete old recorded entry if new entry is a duplicate.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
@@ -28,10 +22,6 @@ export QT_QPA_PLATFORM="wayland;xcb"
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
 export QT_SCALE_FACTOR_ROUNDING_POLICY="RoundPreferFloor"
 
-# Auto-start Herdr
-if [[ -z "$HERDR_ENV" ]]; then
-    herdr
-fi
 alias df="duf -only local -only-fs btrfs,ntfs,fat32,ntfs3,ext4"
 alias la="exa -l --no-permissions --group-directories-first"
 alias cat="batcat"
