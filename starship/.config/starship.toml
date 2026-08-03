@@ -2,9 +2,10 @@
 
 format = """
 [](surface0)\
-$hostname\
-[<U+E0B0>](bg:green fg:surface0)\
 $os\
+[ ](surface0)\
+$hostname\
+[](bg:surface0)\
 $username\
 [](bg:peach fg:surface0)\
 $directory\
@@ -16,10 +17,6 @@ $c\
 $rust\
 $golang\
 $nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
 $python\
 [](fg:teal bg:blue)\
 $docker_context\
